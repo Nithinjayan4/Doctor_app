@@ -31,7 +31,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://doctor-app-nu.vercel.app","https://teal-swan-49e8be.netlify.app"],
+    origin: ["https://doctor-app-nu.vercel.app","https://gregarious-beijinho-dec03e.netlify.app"],
   },
 });
 
