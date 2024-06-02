@@ -1,5 +1,5 @@
-import React from 'react'
-import { useRoutes, useLocation } from 'react-router-dom';
+
+import {  useLocation } from 'react-router-dom';
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import Route from '../Routes/Route'
