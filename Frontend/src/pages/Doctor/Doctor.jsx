@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { doctors } from '../../assets/data/doctors'
+import  { useEffect, useState } from 'react'
+//import { doctors } from '../../assets/data/doctors'
 import DoctorCard from '../../components/doctors/DoctorCard'
 import { BASE_URL,token } from '../../../config'
 import useFetchData from '../../hooks/useFetchData'
