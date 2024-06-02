@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { BASE_URL } from '../../../config.js';
 import {io} from "socket.io-client"
 
-const socket = io("https://www.medicare.clintogeorge.live")
+const socket = io("https://doctor-app-0sjm.onrender.com")
 
 const ChatDoctorComponent = ({ doctorId, patientId, patientName }) => {
   const [message, setMessage] = useState('');

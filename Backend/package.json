@@ -9,7 +9,7 @@
     "start": "node index.js",
     "start-dev": "nodemon index.js"
   },
-  "author": "Clinto George",
+  "author": "Nithin",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.8",

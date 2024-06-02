@@ -9,7 +9,7 @@ import { authContext } from '../../context/AuthContext';
 import { BASE_URL } from '../../../config.js';
 import { io } from 'socket.io-client';
 
-const socket = io("https://www.medicare.clintoegeorge.live");
+const socket = io("https://doctor-app-0sjm.onrender.com");
 
 console.log('socket', socket);
 
@@ -39,7 +39,7 @@ function Header() {
 
   useEffect(() => {
     if (token && user) {
-      const socket = io("https://www.medicare.clintoegeorge.live");
+      const socket = io("https://doctor-app-0sjm.onrender.com");
 
       socket.on('connect', () => {
         console.log('Connected to socket.io server');
