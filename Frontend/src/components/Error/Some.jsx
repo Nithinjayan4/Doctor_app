@@ -1,33 +1,14 @@
+import {faqs} from '../../assets/data/faqs'
+import FaqItem from './FaqItem'
 
-
-import DoctorCard from './DoctorCard'
-import { BASE_URL } from '../../../config'
-import useFetchData from '../../hooks/useFetchData'
-import Loader from '../loader/Loading'
-import Error from '../Error/Error'
-
-
-const DoctorsList = () => {
-
-
-  const {data:doctors,loading,error} = useFetchData(`${BASE_URL}/doctors`)
-
-console.log('base',BASE_URL);
-
-   
-
-
+const FaqList = () => {
   return (
-    <>
-
-    {loading && <Loader/>}
-    {error && <Error/>}
-    {!loading && !error && <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
-        {doctors.map((doctor)=><DoctorCard key={doctor._id} doctor={doctor}/>)}
-      
-    </div>}
-    </>
+    <ul className='mt-[38px]'>
+        {faqs.map((item,index)=>(
+            <FaqItem item={item} key={index}/>
+        ))}
+    </ul>
   )
 }
 
-export default DoctorsList
+export default FaqList
