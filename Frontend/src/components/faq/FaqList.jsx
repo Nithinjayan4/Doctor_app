@@ -1,5 +1,5 @@
 import {faqs} from '../../assets/data/faqs'
-import FaqItem from './FaqItem'
+import FaqItem from '../faq/FaqItem.jsx'
 
 const FaqList = () => {
   return (
