@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Loading from '../loader/Loading';
 import useFetchData from '../../hooks/useFetchData';
 import { BASE_URL, token } from '../../../config.js';
