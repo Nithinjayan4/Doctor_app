@@ -31,7 +31,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://www.medicare.clintogeorge.live"],
+    origin: ["https://darling-syrniki-45820c.netlify.app"],
   },
 });
 
